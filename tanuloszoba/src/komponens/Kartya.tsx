@@ -1,4 +1,5 @@
 import type { TanuloszobaTipus } from "../adatok/adatok"
+import { useElemKontextus } from "../kontext/kontextus";
 
 interface KartyaProps {
     elem: TanuloszobaTipus;
@@ -8,9 +9,10 @@ interface KartyaProps {
 
 
 export default function Kartya({ elem }: KartyaProps) {
-    
+    const { foglalas } = useElemKontextus();
+
     function allapot(elem: TanuloszobaTipus): void {
-        
+        foglalas(elem);
     }
 
     return(
