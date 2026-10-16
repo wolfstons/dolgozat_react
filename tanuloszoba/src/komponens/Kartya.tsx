@@ -8,6 +8,11 @@ interface KartyaProps {
 
 
 export default function Kartya({ elem }: KartyaProps) {
+    
+    function allapot(elem: TanuloszobaTipus): void {
+        
+    }
+
     return(
         <article>
             <h2>{elem.szoba_nev}</h2>
@@ -15,7 +20,7 @@ export default function Kartya({ elem }: KartyaProps) {
             <p>Emelet: {elem.emelet}.</p>
             <p>Férőhelyek: {elem.ferohely}</p>
             <p>Foglalt helyek: {elem.foglalt_helyek}</p>
-            <button onClick={() => {}}>helyet foglalok</button>
+            <button onClick={() =>allapot(elem)}>helyet foglalok</button>
         </article>
         
     )
