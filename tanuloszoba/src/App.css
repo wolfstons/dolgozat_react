@@ -1,0 +1,30 @@
+main{
+  width: 80%;
+  margin: auto;
+ 
+}
+section{
+   display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+article{
+
+  border-radius: 5px;
+  border: 1px solid black;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+
+}
+button{
+  color: grey;
+}
+p{
+  border: 1px dotted rgba(128, 128, 128, 0.452);
+}
+#kartyak{
+   display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}

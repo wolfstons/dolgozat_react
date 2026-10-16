@@ -20,7 +20,7 @@ function App() {
           <h1>tanuloszobák neked csak most csak ma</h1>
         </header>
         <section>
-          <Kartyak elem={undefined} index={undefined}/>
+          <Kartyak />
         </section>
       </main>
     </>
