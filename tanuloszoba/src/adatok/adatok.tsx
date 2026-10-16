@@ -4,15 +4,15 @@ export type szobatipusok =  "egyéni tanulás"| "csoportmunka"|  "számítógép
 
 export type TanuloszobaTipus={
     id:number,
-    szoba_nev:String,
-    szobatipus:String,
-    emelet:Number,
-    ferohely:Number,
-    foglalt_helyek:Number
+    szoba_nev:string,
+    szobatipus:szobatipusok,
+    emelet:number,
+    ferohely:number,
+    foglalt_helyek:number
 }
 
 
-export const TANULOSZOBAK = [
+export const TANULOSZOBAK:TanuloszobaTipus[] = [
     {
         id: 1,
         szoba_nev: "Csendes kuckó",
